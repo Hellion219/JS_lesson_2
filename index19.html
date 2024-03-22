@@ -11,8 +11,12 @@
         a = Number(a);
         b = Number(b);
 
-        var result = Math.sqrt(a * b) < 4 ? 'Мало' : 'Много';
-        alert(result);
+        if (a < 0 || b < 0) {
+            alert('Невозможно посчитать квадратный корень отрицательного числа');
+        } else {
+            var result = Math.sqrt(a * b) < 4 ? 'Мало' : 'Много';
+            alert(result);
+        }
     </script>
 </body>
 </html>
